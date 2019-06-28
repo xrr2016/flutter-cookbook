@@ -17,7 +17,7 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('AnimatedContainer Demo'),
+        title: Text('Animate the properties of a container'),
       ),
       body: Center(
         child: AnimatedContainer(

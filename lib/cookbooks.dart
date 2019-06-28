@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/animation/animation_container_page.dart';
+import 'package:flutter_cookbook/animation/fade_widget_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -17,6 +18,17 @@ class CookBooks extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => AnimatedContainerPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Fade a widget in and out'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => FadeWidgetPage(),
                 ),
               );
             },
