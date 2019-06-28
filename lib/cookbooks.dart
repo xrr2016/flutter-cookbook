@@ -5,6 +5,7 @@ import 'package:flutter_cookbook/design/custom_font_page.dart';
 import 'package:flutter_cookbook/design/drawer_page.dart';
 import 'package:flutter_cookbook/design/font_package_page.dart';
 import 'package:flutter_cookbook/design/snackbar_page.dart';
+import 'package:flutter_cookbook/design/tabs_page.dart';
 import 'package:flutter_cookbook/design/theme_data_page.dart';
 import 'package:flutter_cookbook/design/update_ui_%20orientation_page.dart';
 
@@ -101,6 +102,17 @@ class CookBooks extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => CustomFontPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Work with tabs'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => TabsPage(),
                 ),
               );
             },
