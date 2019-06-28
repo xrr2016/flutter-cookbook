@@ -8,6 +8,7 @@ import 'package:flutter_cookbook/design/snackbar_page.dart';
 import 'package:flutter_cookbook/design/tabs_page.dart';
 import 'package:flutter_cookbook/design/theme_data_page.dart';
 import 'package:flutter_cookbook/design/update_ui_%20orientation_page.dart';
+import 'package:flutter_cookbook/forms/form_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -113,6 +114,17 @@ class CookBooks extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => TabsPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Build a form with validation'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => FormPage(),
                 ),
               );
             },
