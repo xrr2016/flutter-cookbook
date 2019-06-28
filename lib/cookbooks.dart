@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/animation/animation_container_page.dart';
 import 'package:flutter_cookbook/animation/fade_widget_page.dart';
+import 'package:flutter_cookbook/design/drawer_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -29,6 +30,17 @@ class CookBooks extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => FadeWidgetPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Add a Drawer to a screen'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DrawerPage(),
                 ),
               );
             },
