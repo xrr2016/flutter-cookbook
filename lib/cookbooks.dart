@@ -9,6 +9,7 @@ import 'package:flutter_cookbook/design/tabs_page.dart';
 import 'package:flutter_cookbook/design/theme_data_page.dart';
 import 'package:flutter_cookbook/design/update_ui_%20orientation_page.dart';
 import 'package:flutter_cookbook/forms/form_page.dart';
+import 'package:flutter_cookbook/forms/text_field_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -125,6 +126,17 @@ class CookBooks extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => FormPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Create and style a text field'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => TextFieldPage(),
                 ),
               );
             },
