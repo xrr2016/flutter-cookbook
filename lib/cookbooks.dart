@@ -4,6 +4,7 @@ import 'package:flutter_cookbook/animation/fade_widget_page.dart';
 import 'package:flutter_cookbook/design/drawer_page.dart';
 import 'package:flutter_cookbook/design/font_package_page.dart';
 import 'package:flutter_cookbook/design/snackbar_page.dart';
+import 'package:flutter_cookbook/design/theme_data_page.dart';
 import 'package:flutter_cookbook/design/update_ui_%20orientation_page.dart';
 
 class CookBooks extends StatelessWidget {
@@ -77,6 +78,17 @@ class CookBooks extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => UpdateUiOrientationPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Use themes to share colors and font styles'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ThemeDataPage(),
                 ),
               );
             },
