@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/animation/animation_container_page.dart';
 import 'package:flutter_cookbook/animation/fade_widget_page.dart';
+import 'package:flutter_cookbook/design/custom_font_page.dart';
 import 'package:flutter_cookbook/design/drawer_page.dart';
 import 'package:flutter_cookbook/design/font_package_page.dart';
 import 'package:flutter_cookbook/design/snackbar_page.dart';
@@ -89,6 +90,17 @@ class CookBooks extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => ThemeDataPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Use a custom font'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => CustomFontPage(),
                 ),
               );
             },

@@ -64,6 +64,10 @@ flutter:
         - asset: packages/awesome_package/fonts/Raleway-Regular.ttf
         - asset: packages/awesome_package/fonts/Raleway-Italic.ttf
           style: italic
+    - family: Puhuiti
+      fonts:
+        - asset: fonts/AlibabaSans-Regular
+        - asset: fonts/Alibaba-PuHuiTi-Regular.otf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
