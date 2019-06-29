@@ -8,6 +8,7 @@ import 'package:flutter_cookbook/design/snackbar_page.dart';
 import 'package:flutter_cookbook/design/tabs_page.dart';
 import 'package:flutter_cookbook/design/theme_data_page.dart';
 import 'package:flutter_cookbook/design/update_ui_%20orientation_page.dart';
+import 'package:flutter_cookbook/forms/focus_text_page.dart';
 import 'package:flutter_cookbook/forms/form_page.dart';
 import 'package:flutter_cookbook/forms/text_field_page.dart';
 
@@ -137,6 +138,17 @@ class CookBooks extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => TextFieldPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Focus and text fields'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => FocusTextPage(),
                 ),
               );
             },
