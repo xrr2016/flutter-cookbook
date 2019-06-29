@@ -13,6 +13,7 @@ import 'package:flutter_cookbook/forms/form_page.dart';
 import 'package:flutter_cookbook/forms/handle_change_page.dart';
 import 'package:flutter_cookbook/forms/retrive_text_page.dart';
 import 'package:flutter_cookbook/forms/text_field_page.dart';
+import 'package:flutter_cookbook/gestures/ink_well_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -24,6 +25,7 @@ class CookBooks extends StatelessWidget {
       body: ListView(
         children: <Widget>[
           Padding(
+            padding: EdgeInsets.only(bottom: 50),
             child: Column(
               children: <Widget>[
                 ListTile(
@@ -180,9 +182,19 @@ class CookBooks extends StatelessWidget {
                     );
                   },
                 ),
+                ListTile(
+                  title: Text('Add Material touch ripples'),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => InkWellPage(),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
-            padding: EdgeInsets.only(bottom: 50),
           ),
         ],
       ),
