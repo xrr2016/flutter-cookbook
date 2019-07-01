@@ -16,6 +16,8 @@ import 'package:flutter_cookbook/forms/text_field_page.dart';
 import 'package:flutter_cookbook/gestures/handle_taps_page.dart';
 import 'package:flutter_cookbook/gestures/ink_well_page.dart';
 import 'package:flutter_cookbook/gestures/swipe_dismiss_page.dart';
+import 'package:flutter_cookbook/images/fade_image_page.dart';
+import 'package:flutter_cookbook/images/internet_image_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -213,6 +215,28 @@ class CookBooks extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => SwipeDimissPage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Text('Display images from the internet'),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => InternetImagePage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Text('Fade in images with a placeholder'),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => FadeImagePage(),
                       ),
                     );
                   },
