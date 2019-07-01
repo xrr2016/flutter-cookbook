@@ -15,6 +15,7 @@ import 'package:flutter_cookbook/forms/retrive_text_page.dart';
 import 'package:flutter_cookbook/forms/text_field_page.dart';
 import 'package:flutter_cookbook/gestures/handle_taps_page.dart';
 import 'package:flutter_cookbook/gestures/ink_well_page.dart';
+import 'package:flutter_cookbook/gestures/swipe_dismiss_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -201,6 +202,17 @@ class CookBooks extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => HandleTapsPage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Text('Implement swipe to dismiss'),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => SwipeDimissPage(),
                       ),
                     );
                   },
