@@ -13,6 +13,7 @@ import 'package:flutter_cookbook/forms/form_page.dart';
 import 'package:flutter_cookbook/forms/handle_change_page.dart';
 import 'package:flutter_cookbook/forms/retrive_text_page.dart';
 import 'package:flutter_cookbook/forms/text_field_page.dart';
+import 'package:flutter_cookbook/gestures/handle_taps_page.dart';
 import 'package:flutter_cookbook/gestures/ink_well_page.dart';
 
 class CookBooks extends StatelessWidget {
@@ -189,6 +190,17 @@ class CookBooks extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => InkWellPage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Text('Handle taps'),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => HandleTapsPage(),
                       ),
                     );
                   },
