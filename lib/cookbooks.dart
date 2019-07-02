@@ -4,13 +4,14 @@ import 'package:flutter_cookbook/design/design_page.dart';
 import 'package:flutter_cookbook/forms/forms_page.dart';
 import 'package:flutter_cookbook/gestures/gestures_page.dart';
 import 'package:flutter_cookbook/images/images_page.dart';
+import 'package:flutter_cookbook/lists/list_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cook Books'),
+        title: Text('Cook Book'),
       ),
       body: ListView(
         children: <Widget>[
@@ -79,6 +80,19 @@ class CookBooks extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => ImagesPage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.list),
+                  title: Text('Lists'),
+                  trailing: Icon(Icons.arrow_forward),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Listpage(),
                       ),
                     );
                   },
