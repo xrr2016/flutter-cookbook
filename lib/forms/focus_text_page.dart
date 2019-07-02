@@ -41,8 +41,11 @@ class _MyFormState extends State<MyForm> {
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        TextField(
-          focusNode: _myFocusNode,
+        Padding(
+          padding: const EdgeInsets.all(12.0),
+          child: TextField(
+            focusNode: _myFocusNode,
+          ),
         ),
         SizedBox(height: 20),
         RaisedButton(

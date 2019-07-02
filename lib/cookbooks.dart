@@ -1,24 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_cookbook/animation/animation_container_page.dart';
-import 'package:flutter_cookbook/animation/fade_widget_page.dart';
-import 'package:flutter_cookbook/design/custom_font_page.dart';
-import 'package:flutter_cookbook/design/drawer_page.dart';
-import 'package:flutter_cookbook/design/font_package_page.dart';
-import 'package:flutter_cookbook/design/snackbar_page.dart';
-import 'package:flutter_cookbook/design/tabs_page.dart';
-import 'package:flutter_cookbook/design/theme_data_page.dart';
-import 'package:flutter_cookbook/design/update_ui_%20orientation_page.dart';
-import 'package:flutter_cookbook/forms/focus_text_page.dart';
-import 'package:flutter_cookbook/forms/form_page.dart';
-import 'package:flutter_cookbook/forms/handle_change_page.dart';
-import 'package:flutter_cookbook/forms/retrive_text_page.dart';
-import 'package:flutter_cookbook/forms/text_field_page.dart';
-import 'package:flutter_cookbook/gestures/handle_taps_page.dart';
-import 'package:flutter_cookbook/gestures/ink_well_page.dart';
-import 'package:flutter_cookbook/gestures/swipe_dismiss_page.dart';
-import 'package:flutter_cookbook/images/cached_image_page.dart';
-import 'package:flutter_cookbook/images/fade_image_page.dart';
-import 'package:flutter_cookbook/images/internet_image_page.dart';
+import 'package:flutter_cookbook/animation/animation_page.dart';
+import 'package:flutter_cookbook/design/design_page.dart';
+import 'package:flutter_cookbook/forms/forms_page.dart';
+import 'package:flutter_cookbook/gestures/gestures_page.dart';
+import 'package:flutter_cookbook/images/images_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -34,221 +19,66 @@ class CookBooks extends StatelessWidget {
             child: Column(
               children: <Widget>[
                 ListTile(
-                  title: Text('Animate the properties of a container'),
+                  leading: Icon(Icons.movie),
+                  title: Text('Animation'),
+                  trailing: Icon(Icons.arrow_forward),
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => AnimatedContainerPage(),
+                        builder: (context) => AnimationPage(),
                       ),
                     );
                   },
                 ),
                 ListTile(
-                  title: Text('Fade a widget in and out'),
+                  leading: Icon(Icons.shopping_basket),
+                  title: Text('Design'),
+                  trailing: Icon(Icons.arrow_forward),
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => FadeWidgetPage(),
+                        builder: (context) => DesignPage(),
                       ),
                     );
                   },
                 ),
                 ListTile(
-                  title: Text('Add a Drawer to a screen'),
+                  leading: Icon(Icons.format_align_center),
+                  title: Text('Forms'),
+                  trailing: Icon(Icons.arrow_forward),
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => DrawerPage(),
+                        builder: (context) => FormsPage(),
                       ),
                     );
                   },
                 ),
                 ListTile(
-                  title: Text('Display a snackbar'),
+                  leading: Icon(Icons.healing),
+                  title: Text('Gestures'),
+                  trailing: Icon(Icons.arrow_forward),
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => SnackbarPage(),
+                        builder: (context) => GesturesPage(),
                       ),
                     );
                   },
                 ),
                 ListTile(
-                  title: Text('Export fonts from a package'),
+                  leading: Icon(Icons.image),
+                  title: Text('Images'),
+                  trailing: Icon(Icons.arrow_forward),
                   onTap: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => FontPackagePage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Update the UI based on orientation'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => UpdateUiOrientationPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Use themes to share colors and font styles'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => ThemeDataPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Use a custom font'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => CustomFontPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Work with tabs'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => TabsPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Build a form with validation'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => FormPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Create and style a text field'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => TextFieldPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Focus and text fields'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => FocusTextPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Handle changes to a text field'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => HandleChangePage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Retrieve the value of a text field'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => RetrieveTextPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Add Material touch ripples'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => InkWellPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Handle taps'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => HandleTapsPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Implement swipe to dismiss'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => SwipeDimissPage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Display images from the internet'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => InternetImagePage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Fade in images with a placeholder'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => FadeImagePage(),
-                      ),
-                    );
-                  },
-                ),
-                ListTile(
-                  title: Text('Work with cached images'),
-                  onTap: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (context) => CachedImagePage(),
+                        builder: (context) => ImagesPage(),
                       ),
                     );
                   },
