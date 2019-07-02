@@ -28,6 +28,7 @@ dependencies:
   transparent_image:
   cached_network_image:
   sentry:
+  video_player:
 
 dev_dependencies:
   flutter_test:

@@ -6,6 +6,8 @@ import 'package:flutter_cookbook/gestures/gestures_page.dart';
 import 'package:flutter_cookbook/images/images_page.dart';
 import 'package:flutter_cookbook/lists/list_page.dart';
 import 'package:flutter_cookbook/maintenance/maintenance_page.dart';
+import 'package:flutter_cookbook/navigation/navigation_page.dart';
+import 'package:flutter_cookbook/plugins/plugins_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -107,6 +109,32 @@ class CookBooks extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => MaintenancePage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.navigation),
+                  title: Text('Navigation'),
+                  trailing: Icon(Icons.arrow_forward),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => NavigationPage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.photo_album),
+                  title: Text('Plugins'),
+                  trailing: Icon(Icons.arrow_forward),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => PluginsPage(),
                       ),
                     );
                   },
