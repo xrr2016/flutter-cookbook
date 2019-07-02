@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/lists/grid_list_page.dart';
+import 'package:flutter_cookbook/lists/types_list_page.dart';
 
 class Listpage extends StatelessWidget {
   @override
@@ -20,7 +21,18 @@ class Listpage extends StatelessWidget {
                 ),
               );
             },
-          )
+          ),
+          ListTile(
+            title: Text('Create lists with different types of items'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => TypesListPage(),
+                ),
+              );
+            },
+          ),
         ],
       ),
     );
