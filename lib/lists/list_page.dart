@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/lists/floating_app_bar_page.dart';
 import 'package:flutter_cookbook/lists/grid_list_page.dart';
 import 'package:flutter_cookbook/lists/horizontal_list_page.dart';
+import 'package:flutter_cookbook/lists/long_lists_page.dart';
 import 'package:flutter_cookbook/lists/types_list_page.dart';
 
 class Listpage extends StatelessWidget {
@@ -53,6 +54,17 @@ class Listpage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => FloatingAppbarpage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Work with long lists'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => LongListsPage(),
                 ),
               );
             },
