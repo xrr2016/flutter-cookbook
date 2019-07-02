@@ -27,6 +27,7 @@ dependencies:
     path: packages/awesome_package
   transparent_image:
   cached_network_image:
+  sentry:
 
 dev_dependencies:
   flutter_test:

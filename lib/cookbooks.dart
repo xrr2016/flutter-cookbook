@@ -5,6 +5,7 @@ import 'package:flutter_cookbook/forms/forms_page.dart';
 import 'package:flutter_cookbook/gestures/gestures_page.dart';
 import 'package:flutter_cookbook/images/images_page.dart';
 import 'package:flutter_cookbook/lists/list_page.dart';
+import 'package:flutter_cookbook/maintenance/maintenance_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -93,6 +94,19 @@ class CookBooks extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => Listpage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.bug_report),
+                  title: Text('Maintenance'),
+                  trailing: Icon(Icons.arrow_forward),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => MaintenancePage(),
                       ),
                     );
                   },
