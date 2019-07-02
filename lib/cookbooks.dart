@@ -16,6 +16,7 @@ import 'package:flutter_cookbook/forms/text_field_page.dart';
 import 'package:flutter_cookbook/gestures/handle_taps_page.dart';
 import 'package:flutter_cookbook/gestures/ink_well_page.dart';
 import 'package:flutter_cookbook/gestures/swipe_dismiss_page.dart';
+import 'package:flutter_cookbook/images/cached_image_page.dart';
 import 'package:flutter_cookbook/images/fade_image_page.dart';
 import 'package:flutter_cookbook/images/internet_image_page.dart';
 
@@ -237,6 +238,17 @@ class CookBooks extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => FadeImagePage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  title: Text('Work with cached images'),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => CachedImagePage(),
                       ),
                     );
                   },
