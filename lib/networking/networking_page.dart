@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cookbook/networking/authenticated_request_page.dart';
 import 'package:flutter_cookbook/networking/fetch_data_page.dart';
 
 class NetworkingPage extends StatelessWidget {
@@ -16,6 +17,16 @@ class NetworkingPage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => FetchDataPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Make authenticated requests'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                    builder: (context) => AuthenticatedRequestsPage()),
               );
             },
           )
