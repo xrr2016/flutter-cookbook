@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/navigation/animate_screens_first_page.dart';
+import 'package:flutter_cookbook/navigation/named_route_page.dart';
 import 'package:flutter_cookbook/navigation/navigate_first_page.dart';
 import 'package:flutter_cookbook/navigation/push_name_page.dart';
 
@@ -41,6 +42,17 @@ class NavigationPage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => PushNamePage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Pass arguments to a named route'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => NamedRoutePage(),
                 ),
               );
             },
