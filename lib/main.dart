@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/cookbooks.dart';
+import 'package:flutter_cookbook/navigation/navigate_second_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -20,6 +21,9 @@ class MyApp extends StatelessWidget {
             // body1: TextStyle(fontSize: 12.0, fontFamily: 'Hind'),
             ),
       ),
+      routes: {
+        '/second': (context) => NavigateSecondPage(),
+      },
     );
   }
 }
