@@ -4,6 +4,7 @@ import 'package:flutter_cookbook/navigation/named_route_page.dart';
 import 'package:flutter_cookbook/navigation/navigate_first_page.dart';
 import 'package:flutter_cookbook/navigation/push_name_page.dart';
 import 'package:flutter_cookbook/navigation/recrieve_data_page.dart';
+import 'package:flutter_cookbook/navigation/send_data_page.dart';
 
 class NavigationPage extends StatelessWidget {
   @override
@@ -65,6 +66,17 @@ class NavigationPage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => RecrieveDataPage(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Send data to a new screen'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => SendDataPage(),
                 ),
               );
             },
