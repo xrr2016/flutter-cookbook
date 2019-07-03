@@ -7,6 +7,7 @@ import 'package:flutter_cookbook/images/images_page.dart';
 import 'package:flutter_cookbook/lists/list_page.dart';
 import 'package:flutter_cookbook/maintenance/maintenance_page.dart';
 import 'package:flutter_cookbook/navigation/navigation_page.dart';
+import 'package:flutter_cookbook/networking/networking_page.dart';
 import 'package:flutter_cookbook/plugins/plugins_page.dart';
 
 class CookBooks extends StatelessWidget {
@@ -122,6 +123,19 @@ class CookBooks extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => NavigationPage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.network_wifi),
+                  title: Text('Networking'),
+                  trailing: Icon(Icons.arrow_forward),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => NetworkingPage(),
                       ),
                     );
                   },
