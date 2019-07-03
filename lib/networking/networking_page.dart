@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/networking/authenticated_request_page.dart';
 import 'package:flutter_cookbook/networking/fetch_data_page.dart';
+import 'package:flutter_cookbook/networking/parse_json_page.dart';
 
 class NetworkingPage extends StatelessWidget {
   @override
@@ -27,6 +28,15 @@ class NetworkingPage extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                     builder: (context) => AuthenticatedRequestsPage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Parse JSON in the background'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => ParseJsonPage()),
               );
             },
           )
