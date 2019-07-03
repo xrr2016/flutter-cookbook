@@ -30,6 +30,7 @@ dependencies:
   sentry:
   video_player:
   http:
+  web_socket_channel:
 
 dev_dependencies:
   flutter_test:

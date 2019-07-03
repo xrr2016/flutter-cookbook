@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/networking/authenticated_request_page.dart';
 import 'package:flutter_cookbook/networking/fetch_data_page.dart';
 import 'package:flutter_cookbook/networking/parse_json_page.dart';
+import 'package:flutter_cookbook/networking/websocket_page.dart';
+import 'package:web_socket_channel/io.dart';
 
 class NetworkingPage extends StatelessWidget {
   @override
@@ -39,7 +41,21 @@ class NetworkingPage extends StatelessWidget {
                 MaterialPageRoute(builder: (context) => ParseJsonPage()),
               );
             },
-          )
+          ),
+          ListTile(
+            title: Text('Work with WebSockets'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => WebsocketPage(
+                        channel: IOWebSocketChannel.connect(
+                            'ws://echo.websocket.org'),
+                      ),
+                ),
+              );
+            },
+          ),
         ],
       ),
     );
