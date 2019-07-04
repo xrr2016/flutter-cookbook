@@ -15,7 +15,7 @@ class _PlayVideoPageState extends State<PlayVideoPage> {
     super.initState();
 
     _vidoeController = VideoPlayerController.network(
-      'https://flutter.github.io/assets-for-api-docs/assets/videos/butterfly.mp4',
+      'https://interactive-examples.mdn.mozilla.net/media/examples/flower.webm',
     );
 
     _initializeVideoPlayerFuture = _vidoeController.initialize();
@@ -37,9 +37,11 @@ class _PlayVideoPageState extends State<PlayVideoPage> {
         future: _initializeVideoPlayerFuture,
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
-            return AspectRatio(
-              aspectRatio: _vidoeController.value.aspectRatio,
-              child: VideoPlayer(_vidoeController),
+            return Center(
+              child: AspectRatio(
+                aspectRatio: _vidoeController.value.aspectRatio,
+                child: VideoPlayer(_vidoeController),
+              ),
             );
           } else {
             return Center(child: CircularProgressIndicator());
