@@ -10,6 +10,7 @@ import 'package:flutter_cookbook/navigation/navigation_page.dart';
 import 'package:flutter_cookbook/networking/networking_page.dart';
 import 'package:flutter_cookbook/persistence/persistence_page.dart';
 import 'package:flutter_cookbook/plugins/plugins_page.dart';
+import 'package:flutter_cookbook/testing/testing_page.dart';
 
 class CookBooks extends StatelessWidget {
   @override
@@ -163,6 +164,19 @@ class CookBooks extends StatelessWidget {
                       context,
                       MaterialPageRoute(
                         builder: (context) => PluginsPage(),
+                      ),
+                    );
+                  },
+                ),
+                ListTile(
+                  leading: Icon(Icons.textsms),
+                  title: Text('Testing'),
+                  trailing: Icon(Icons.arrow_forward),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => TestingPage(),
                       ),
                     );
                   },
