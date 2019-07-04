@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/plugins/play_video_page.dart';
+// import 'package:flutter_cookbook/plugins/take_picture_page.dart';
 
 class PluginsPage extends StatelessWidget {
   @override
@@ -21,6 +22,17 @@ class PluginsPage extends StatelessWidget {
               );
             },
           ),
+          // ListTile(
+          //   title: Text('Take a picture using the camera'),
+          //   onTap: () {
+          //     Navigator.push(
+          //       context,
+          //       MaterialPageRoute(
+          //         builder: (context) => TakePicturePage(),
+          //       ),
+          //     );
+          //   },
+          // ),
         ],
       ),
     );
