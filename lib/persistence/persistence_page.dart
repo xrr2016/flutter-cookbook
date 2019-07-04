@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_cookbook/persistence/read_write_page.dart';
 import 'package:flutter_cookbook/persistence/sqlite_page.dart';
 
 class PersistencePage extends StatelessWidget {
@@ -16,6 +17,17 @@ class PersistencePage extends StatelessWidget {
               Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => SqlitePage()),
+              );
+            },
+          ),
+          ListTile(
+            title: Text('Read and write files'),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ReadWritePage(),
+                ),
               );
             },
           ),
